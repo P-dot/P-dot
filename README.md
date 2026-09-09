@@ -1,126 +1,155 @@
 # IBM z/OS Mainframe Engineering Portfolio
 
-Hands-on engineering portfolio focused on **IBM z/OS systems, operations, security, networking, storage, data, application development and automation**.
+Hands-on engineering portfolio focused on building a **connected z/OS laboratory**, where specialized repositories progressively converge into production-like workflows.
 
-The repositories below form a connected mainframe laboratory rather than a collection of isolated exercises.
-
-## Mainframe Engineering Map
+## Connected z/OS Engineering Laboratory
 
 ~~~mermaid
 flowchart TB
+    CORE["z/OS Core Engineering<br/>ADCD / Hercules"]
 
-    ZOS["IBM z/OS Engineering Lab"]
+    TSO["MVS / TSO / ISPF"]
+    JCL["JCL_LABS"]
+    SCHED["z/OS Batch Scheduler"]
+    JES2["JES2"]
 
-    ZOS --> SYS["Systems & Operations"]
-    ZOS --> SEC["Security"]
-    ZOS --> NET["Networking"]
-    ZOS --> DATA["Data & Storage"]
-    ZOS --> DEV["Application Development"]
-    ZOS --> AUTO["Automation & Tooling"]
+    COBOL["COBOL"]
+    PLI["PL/I"]
+    REXX["REXX"]
+    ASM["z/Assembly"]
+    VSAM["VSAM"]
+    DB2["Db2 for z/OS"]
+    CICS["CICS"]
 
-    SYS --> CORE["ADCD / Hercules Engineering"]
-    SYS --> JCL["JCL / JES2 Batch"]
-    SYS --> TSO["TSO / ISPF"]
-    SYS --> SCHED["Batch Scheduling"]
-    SYS --> USS["z/OS UNIX System Services"]
+    RACF["RACF / SAF<br/>Security & Authorization"]
+    USS["USS / OMVS"]
+    TCPIP["TCP/IP"]
+    COMMS["Communications Server"]
 
-    SEC --> RACF["RACF / SMF / Audit Evidence"]
-    SEC --> USS
-    SEC --> NET
+    SMF["SMF / WLM / SRM"]
+    STORAGE["Storage / DASD"]
+    RECOVERY["Backup / Restore"]
+    END["Integrated Production-Like<br/>z/OS Workflows"]
 
-    NET --> COMMS["z/OS Communications Server"]
-    NET --> USS
+    CORE --> TSO
+    CORE --> JES2
+    CORE --> USS
+    CORE --> SMF
+    CORE --> STORAGE
 
-    DATA --> VSAM["VSAM"]
-    DATA --> DB2["Db2 for z/OS"]
-    DATA --> CORE
+    TSO --> JCL
+    TSO --> REXX
+    JCL --> SCHED
+    SCHED --> JES2
 
-    DEV --> COBOL["COBOL"]
-    DEV --> PLI["PL/I"]
-    DEV --> ASM["z/Architecture Assembler"]
-    DEV --> CICS["CICS"]
-    DEV --> REXX["REXX"]
+    JES2 --> COBOL
+    JES2 --> PLI
+    JES2 --> ASM
 
-    COBOL --> JCL
     COBOL --> VSAM
     COBOL --> DB2
-
-    PLI --> JCL
-    ASM --> JCL
-
     CICS --> COBOL
     CICS --> DB2
 
-    REXX --> TSO
-    REXX --> AUTO
+    RACF --> TSO
+    RACF --> JES2
+    RACF --> USS
+    RACF --> CICS
+    RACF --> COMMS
 
-    AUTO --> USS
-    AUTO --> REXX
-    AUTO --> SCHED
-    AUTO --> DEVOPS["COBOL / Db2 / CICS DevOps"]
+    USS --> TCPIP
+    TCPIP --> COMMS
+    STORAGE --> RECOVERY
+
+    JES2 --> SMF
+    CICS --> SMF
+    COMMS --> SMF
+
+    VSAM --> END
+    DB2 --> END
+    CICS --> END
+    COMMS --> END
+    SMF --> END
+    RECOVERY --> END
 
     click CORE "https://github.com/P-dot/zos-adcd-hercules-engineering-lab"
-    click JCL "https://github.com/P-dot/JCL_LABS"
     click TSO "https://github.com/P-dot/MVS_TSO_ISPF"
+    click JCL "https://github.com/P-dot/JCL_LABS"
     click SCHED "https://github.com/P-dot/zos-batch-scheduler"
-    click USS "https://github.com/P-dot/UNIX_System_Services-"
-
-    click RACF "https://github.com/P-dot/mainframe-racf-security-evidence"
-
-    click COMMS "https://github.com/P-dot/zos-communications-server-network-lab"
-
-    click VSAM "https://github.com/P-dot/vsam01"
-    click DB2 "https://github.com/P-dot/DB2-"
-
     click COBOL "https://github.com/P-dot/COBOL"
     click PLI "https://github.com/P-dot/PL-I"
-    click ASM "https://github.com/P-dot/z_Assembly"
-    click CICS "https://github.com/P-dot/CICS"
     click REXX "https://github.com/P-dot/Rexx"
-
-    click DEVOPS "https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"
+    click ASM "https://github.com/P-dot/z_Assembly"
+    click VSAM "https://github.com/P-dot/vsam01"
+    click DB2 "https://github.com/P-dot/DB2-"
+    click CICS "https://github.com/P-dot/CICS"
+    click RACF "https://github.com/P-dot/mainframe-racf-security-evidence"
+    click USS "https://github.com/P-dot/UNIX_System_Services-"
+    click COMMS "https://github.com/P-dot/zos-communications-server-network-lab"
+    click END "https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"
 ~~~
 
-## Core Engineering Areas
+> **Architecture principle:** Scheduler decides and controls → JCL describes the workload → JES2 executes it → applications process data → RACF/SAF protects access → SMF and system facilities provide operational evidence.
 
-| Area | Repository | Focus |
+## Integration Paths
+
+| Track | Connected path |
+|---|---|
+| **Enterprise Batch** | Scheduler → JCL → JES2 → COBOL → VSAM / Db2 → RC / recovery |
+| **Online Transaction** | RACF → CICS → COBOL → Db2 → SMF |
+| **Secure Network Service** | RACF → USS → TCP/IP → Communications Server |
+| **Operations Automation** | MVS / TSO / ISPF → REXX → ISPF services → operations |
+| **Storage Recovery** | DASD → data → backup → restore → validation |
+| **Low-Level Development** | MVS / TSO / ISPF → JCL → z/Assembly → HLASM / load module |
+
+## Laboratory Map
+
+| Area | Repository | Role |
 |---|---|---|
-| z/OS Engineering | [zos-adcd-hercules-engineering-lab](https://github.com/P-dot/zos-adcd-hercules-engineering-lab) | System operations, storage, recovery and configuration |
-| Security | [mainframe-racf-security-evidence](https://github.com/P-dot/mainframe-racf-security-evidence) | RACF, SMF, auditing and security validation |
-| Networking | [zos-communications-server-network-lab](https://github.com/P-dot/zos-communications-server-network-lab) | Communications Server, TCP/IP and diagnostics |
-| JCL / JES2 | [JCL_LABS](https://github.com/P-dot/JCL_LABS) | Batch workloads and data set processing |
-| TSO / ISPF | [MVS_TSO_ISPF](https://github.com/P-dot/MVS_TSO_ISPF) | Interactive mainframe operations and productivity |
-| USS | [UNIX_System_Services-](https://github.com/P-dot/UNIX_System_Services-) | z/OS UNIX System Services |
-| Scheduling | [zos-batch-scheduler](https://github.com/P-dot/zos-batch-scheduler) | Batch scheduling and automation |
-| VSAM | [vsam01](https://github.com/P-dot/vsam01) | ESDS, KSDS, RRDS and LDS |
-| Db2 | [DB2-](https://github.com/P-dot/DB2-) | Db2 for z/OS and SQL |
-| COBOL | [COBOL](https://github.com/P-dot/COBOL) | Mainframe application development |
-| CICS | [CICS](https://github.com/P-dot/CICS) | Online transaction processing |
-| PL/I | [PL-I](https://github.com/P-dot/PL-I) | Enterprise PL/I development |
-| Assembler | [z_Assembly](https://github.com/P-dot/z_Assembly) | z/Architecture and HLASM |
-| REXX | [Rexx](https://github.com/P-dot/Rexx) | TSO/E scripting and automation |
+| **Core z/OS** | [zos-adcd-hercules-engineering-lab](https://github.com/P-dot/zos-adcd-hercules-engineering-lab) | System engineering, JES2, SMF, WLM/SRM, storage, diagnostics and recovery |
+| **Security** | [mainframe-racf-security-evidence](https://github.com/P-dot/mainframe-racf-security-evidence) | RACF/SAF, authorization, least privilege, audit and evidence |
+| **Communications** | [zos-communications-server-network-lab](https://github.com/P-dot/zos-communications-server-network-lab) | TCP/IP, TN3270, FTP, diagnostics, hardening and AT-TLS readiness |
+| **TSO / ISPF** | [MVS_TSO_ISPF](https://github.com/P-dot/MVS_TSO_ISPF) | Interactive z/OS environment |
+| **Batch** | [JCL_LABS](https://github.com/P-dot/JCL_LABS) | JCL, procedures, datasets, utilities, IDCAMS and GDGs |
+| **Scheduling** | [zos-batch-scheduler](https://github.com/P-dot/zos-batch-scheduler) | Workload orchestration and recovery |
+| **USS** | [UNIX_System_Services-](https://github.com/P-dot/UNIX_System_Services-) | OMVS, POSIX filesystem, permissions and processes |
+| **COBOL** | [COBOL](https://github.com/P-dot/COBOL) | Mainframe application programming |
+| **VSAM** | [vsam01](https://github.com/P-dot/vsam01) | ESDS, KSDS, RRDS and LDS |
+| **Db2** | [DB2-](https://github.com/P-dot/DB2-) | Db2 for z/OS and SQL |
+| **CICS** | [CICS](https://github.com/P-dot/CICS) | Online transaction processing |
+| **REXX** | [Rexx](https://github.com/P-dot/Rexx) | TSO/E and ISPF automation |
+| **PL/I** | [PL-I](https://github.com/P-dot/PL-I) | PL/I development |
+| **Assembler** | [z_Assembly](https://github.com/P-dot/z_Assembly) | HLASM and low-level programming |
+| **Integration** | [mainframe-cobol-db2-cics-devops-lab](https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab) | Cross-domain scenarios |
 
-## Engineering Approach
+## Engineering Method
 
-The laboratory is built around:
+~~~text
+Build → Execute → Observe → Diagnose → Correct → Validate → Document
+~~~
 
-- reproducible technical procedures;
-- documented commands and JCL;
-- execution evidence and return codes;
-- troubleshooting and failure analysis;
-- system administration and operational workflows;
-- controlled security experimentation;
-- progressive automation;
-- security-conscious publication of infrastructure evidence.
-
-The objective is to progressively reproduce the relationships found in a real **IBM z/OS enterprise environment**, showing how systems, security, networking, storage, databases, batch processing and application development interact.
+Labs are developed with reproducible procedures, commands/JCL, execution evidence, return-code analysis, troubleshooting, controlled changes and publication-safe documentation.
 
 ## Current Direction
 
-Current work focuses on deeper integration between these repositories, improving automation of repetitive operator and administrator tasks, and documenting increasingly realistic end-to-end z/OS scenarios.
+~~~text
+Scheduler
+   ↓
+JCL / JES2
+   ↓
+COBOL
+   ↓
+VSAM / Db2
+   ↓
+RC / ABEND
+   ↓
+Diagnosis → Restart / Rerun
+   ↓
+Monitoring / Audit / Recovery
+~~~
 
----
+The long-term objective is a coherent **production-like z/OS engineering environment**, where systems, security, batch, networking, storage, databases, transaction processing and automation are understood as parts of the same platform.
 
 ### Main technologies
 
-`z/OS` · `JCL` · `JES2` · `TSO/E` · `ISPF` · `SDSF` · `RACF` · `SMF` · `DFSMS` · `VSAM` · `USS` · `TCP/IP` · `COBOL` · `Db2` · `CICS` · `REXX` · `PL/I` · `HLASM`
+`z/OS` · `TSO/E` · `ISPF` · `SDSF` · `JCL` · `JES2` · `RACF` · `SAF` · `SMF` · `WLM` · `DFSMS` · `USS` · `TCP/IP` · `VSAM` · `COBOL` · `Db2` · `CICS` · `REXX` · `PL/I` · `HLASM`
