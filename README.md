@@ -130,6 +130,93 @@ Build → Execute → Observe → Diagnose → Correct → Validate → Document
 
 Labs are developed with reproducible procedures, commands/JCL, execution evidence, return-code analysis, troubleshooting, controlled changes and publication-safe documentation.
 
+## Engineering Domains & Operational Lifecycle
+
+Architecture V2 adds a second view of the same ecosystem: not only **what technologies are connected**, but **how z/OS engineering work is organized, matured and integrated**.
+
+~~~mermaid
+flowchart TB
+    ZOS["IBM z/OS Engineering"]
+
+    CORE2["Core Platform<br/>Engineering"]
+    OPS["Operations &<br/>Service Management"]
+    STOR2["Storage & DFSMS<br/>Engineering"]
+    BATCH2["Workload & Batch<br/>Engineering"]
+    MAINT["Software<br/>Maintenance"]
+    PERF["Performance & Capacity<br/>Engineering"]
+    DIAG["Problem Determination<br/>& Diagnostics"]
+    SYSPLEX["Sysplex & Availability<br/>Engineering"]
+    RECOV2["Recovery<br/>Engineering"]
+    SEC2["Security<br/>Engineering"]
+    NET2["Communications<br/>Engineering"]
+    USS2["UNIX System<br/>Services"]
+    APP2["Application & Data<br/>Engineering"]
+    AUTO2["Automation & Modern<br/>Operations"]
+    INT2["Integration<br/>Engineering"]
+    PROD["Production-Like<br/>Workflows"]
+
+    ZOS --> CORE2
+    ZOS --> OPS
+    ZOS --> STOR2
+    ZOS --> BATCH2
+    ZOS --> MAINT
+    ZOS --> PERF
+    ZOS --> DIAG
+    ZOS --> SYSPLEX
+    ZOS --> RECOV2
+    ZOS --> SEC2
+    ZOS --> NET2
+    ZOS --> USS2
+    ZOS --> APP2
+    ZOS --> AUTO2
+
+    CORE2 --> INT2
+    OPS --> INT2
+    STOR2 --> INT2
+    BATCH2 --> INT2
+    MAINT --> INT2
+    PERF --> INT2
+    DIAG --> INT2
+    SYSPLEX --> INT2
+    RECOV2 --> INT2
+    SEC2 --> INT2
+    NET2 --> INT2
+    USS2 --> INT2
+    APP2 --> INT2
+    AUTO2 --> INT2
+
+    INT2 --> PROD
+~~~
+
+Cross-cutting engineering planes:
+
+~~~text
+Security      → protects identities, authority, resources and audit boundaries
+Observability → provides SMF, SYSLOG, LOGREC, RMF, SDSF and Health Checker evidence
+Automation    → progressively reduces manual operation through REXX, JCL, Scheduler, shell, workflows and APIs
+~~~
+
+The common Architecture V2 lifecycle is:
+
+~~~mermaid
+flowchart LR
+    D["Discover"] --> B["Baseline"]
+    B --> C["Configure"]
+    C --> O["Operate"]
+    O --> OB["Observe"]
+    OB --> DG["Diagnose"]
+    DG --> R["Recover"]
+    R --> I["Improve"]
+    I --> A["Automate"]
+    A --> IN["Integrate"]
+~~~
+
+This lifecycle is applied across domains without renumbering or discarding historical labs. Existing evidence remains in place while future work gains clearer ownership, maturity and integration targets.
+
+The Architecture V2 model is documented in the central engineering repository:
+
+[Architecture V2 — Engineering Domains, Lab Taxonomy, Operational Maturity and Production Tracks](https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/architecture/v2)
+
 ## Current Direction
 
 ~~~text
