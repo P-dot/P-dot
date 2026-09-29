@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="#-explore-the-portfolio">
-  <img src="assets/zos-mainframe-engineering-portal.png" width="100%" alt="IBM z/OS Mainframe Engineering Portfolio — systems, operations, security, automation, development, storage, networking, diagnostics and integration">
+  <img src="assets/zos-mainframe-engineering-portal-v2.png" width="100%" alt="IBM z/OS Mainframe Engineering Portfolio — systems, operations, security, automation, development, storage, networking, diagnostics and integration">
 </a>
 
 <br><br>
