@@ -152,6 +152,20 @@ IPL/PARMLIB → program management → HCD/IODF → SMP/E → Sysplex
 
 ---
 
+
+<div align="center">
+
+**[ARCHITECTURE V2](https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/architecture/v2)** ·
+**[ENGINEERING CONTROL](https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/engineering-control)** ·
+**[SECURITY](https://github.com/P-dot/mainframe-racf-security-evidence)** ·
+**[AUTOMATION](https://github.com/P-dot/zos-batch-scheduler)** ·
+**[DIAGNOSTICS](https://github.com/P-dot/zos-problem-determination-diagnostics)** ·
+**[INTEGRATION](https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab)**
+
+</div>
+
+---
+
 ## 🧩 Engineering Domains
 
 | Domain | Technical scope | Primary entry |
@@ -267,6 +281,11 @@ flowchart TB
 
 ## 📚 Learning Paths — from Operator to z/OS Engineer
 
+<div align="center">
+<img src="assets/sections/learning-paths.png" width="100%" alt="Learning path from fundamentals to production mindset">
+</div>
+
+
 ```mermaid
 flowchart LR
     L0["L0 · Foundations<br/>Architecture · TSO/ISPF · SDSF"]
@@ -297,6 +316,13 @@ The learning model is **spiral rather than strictly linear**. Security, diagnosi
 ---
 
 ## 🧪 Labs & Evidence
+
+<div align="center">
+<img src="assets/sections/repository-access.png" width="100%" alt="Quick access to the z/OS engineering repositories">
+<br>
+<b>BUILD → EXECUTE → OBSERVE → DIAGNOSE → CORRECT → VALIDATE → DOCUMENT</b>
+</div>
+
 
 > **Evidence model:** `● VALIDATED` = demonstrated with published evidence · `◐ ACTIVE` = capability currently being expanded · `○ ROADMAP` = planned, not yet claimed as validated.
 
@@ -424,6 +450,11 @@ Automation / Integration              Problem Review
 ---
 
 ## 🚀 Production Tracks
+
+<div align="center">
+<img src="assets/sections/portfolio-navigation.png" width="100%" alt="Architecture, production tracks, engineering control, evidence and roadmap navigation">
+</div>
+
 
 These tracks turn specialized laboratories into complete operational stories.
 
