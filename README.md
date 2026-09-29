@@ -1,28 +1,187 @@
-# IBM z/OS Mainframe Engineering University
+<div align="center">
 
-> **A hands-on, security-oriented z/OS engineering portfolio:** learn the platform, operate it, program it, automate it, secure it, diagnose it, recover it, and integrate it into production-like workflows.
+<a href="#-explore-the-portfolio">
+  <img src="assets/zos-mainframe-engineering-portal.png" width="100%" alt="IBM z/OS Mainframe Engineering Portfolio — systems, operations, security, automation, development, storage, networking, diagnostics and integration">
+</a>
 
-<p align="center">
-  <b>Systems Engineering</b> · <b>Application Development</b> · <b>Security Engineering</b> · <b>Workload Automation</b> · <b>Problem Determination</b>
-</p>
+<br><br>
+
+<a href="#-explore-the-portfolio"><b>EXPLORE</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#-choose-your-path"><b>CHOOSE YOUR PATH</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#-learning-paths--from-operator-to-zos-engineer"><b>LEARNING PATHS</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#-labs--evidence"><b>LABS & EVIDENCE</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#-production-tracks"><b>PRODUCTION TRACKS</b></a>
+
+<br><br>
+
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/architecture/v2">
+  <img src="https://img.shields.io/badge/ARCHITECTURE-V2-0f62fe?style=for-the-badge" alt="Architecture V2">
+</a>
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/engineering-control">
+  <img src="https://img.shields.io/badge/ENGINEERING_CONTROL-EVIDENCE_DRIVEN-198038?style=for-the-badge" alt="Engineering Control">
+</a>
+<a href="https://github.com/P-dot/mainframe-racf-security-evidence">
+  <img src="https://img.shields.io/badge/SECURITY-CROSS--CUTTING-da1e28?style=for-the-badge" alt="Security">
+</a>
+<a href="https://github.com/P-dot/zos-batch-scheduler">
+  <img src="https://img.shields.io/badge/WORKLOAD_AUTOMATION-SCHEDULING_%C2%B7_REXX_%C2%B7_APIs-8a3ffc?style=for-the-badge" alt="Workload Automation">
+</a>
+
+</div>
 
 ---
 
-## 🎓 Start Here — Choose Your Path
+## 🧭 Explore the Portfolio
 
-| Path | Start | Build toward | Portfolio destination |
+<table>
+<tr>
+<td width="25%" valign="top">
+
+### 🖥️ SYSTEMS
+
+TSO/E · ISPF · SDSF
+JCL · JES2 · DFSMS
+USS · TCP/IP · SMP/E
+WLM · XCF · Recovery
+
+[**Explore Systems →**](#-system-programmer-engineering-domains)
+
+</td>
+<td width="25%" valign="top">
+
+### 👨‍💻 DEVELOPMENT
+
+COBOL · PL/I · HLASM
+VSAM · Db2 · CICS
+JCL build flows
+Application integration
+
+[**Explore Development →**](#-labs--evidence)
+
+</td>
+<td width="25%" valign="top">
+
+### 🛡️ SECURITY
+
+RACF · SAF · USS
+JES · CICS · Db2
+Certificates · AT-TLS
+Audit · Trust boundaries
+
+[**Explore Security →**](#%EF%B8%8F-security-first-mainframe-engineering)
+
+</td>
+<td width="25%" valign="top">
+
+### ⚙️ AUTOMATION
+
+JCL · JES2 · Scheduling
+Control-M concepts
+REXX · z/OSMF
+Shell · APIs
+
+[**Explore Automation →**](#%EF%B8%8F-workload-automation-engineering)
+
+</td>
+</tr>
+<tr>
+<td width="25%" valign="top">
+
+### 🔬 DIAGNOSTICS
+
+SDSF · SYSLOG · SMF
+LOGREC · Dumps · IPCS
+RMF · WLM
+Incident & recovery
+
+[**Open Diagnostics →**](https://github.com/P-dot/zos-problem-determination-diagnostics)
+
+</td>
+<td width="25%" valign="top">
+
+### 💾 DATA & STORAGE
+
+DFSMS · SMS/ACS
+DASD · VSAM · Db2
+Catalogs
+Backup & restore
+
+[**Explore Storage →**](https://github.com/P-dot/zos-adcd-hercules-engineering-lab)
+
+</td>
+<td width="25%" valign="top">
+
+### 🌐 NETWORK & USS
+
+TCP/IP · TN3270 · FTP
+Communications Server
+OMVS · zFS
+POSIX · shell
+
+[**Explore Network →**](https://github.com/P-dot/zos-communications-server-network-lab)
+
+</td>
+<td width="25%" valign="top">
+
+### 🚀 INTEGRATION
+
+Workload + applications
+Security + data
+Observability + recovery
+Automation + evidence
+
+[**Production Tracks →**](#-production-tracks)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛤️ Choose Your Path
+
+| Professional path | Foundation | Progression | Evidence destination |
 |---|---|---|---|
-| 🖥️ **z/OS Administrator** | TSO/E · ISPF · SDSF · JCL | JES2 · DFSMS · USS · TCP/IP · SMP/E · WLM | Core Platform Engineering |
-| 👨‍💻 **Mainframe Developer** | JCL · COBOL | VSAM · Db2 · CICS · PL/I · HLASM | Application & Data Engineering |
-| ⚙️ **Automation Engineer** | JCL/JES2 | Control-M concepts · REXX · USS shell · workflows/APIs | Workload & Automation Engineering |
-| 🛡️ **Mainframe Security Engineer** | RACF/SAF | JES/USS/Network/CICS/Db2 security · certificates · AT-TLS · audit | Security Engineering |
-| 🔬 **Production/System Engineer** | SDSF · SYSLOG | SMF · LOGREC · dumps/IPCS · RMF/WLM · recovery | Diagnostics, Performance & Recovery |
+| **z/OS Administrator** | TSO/E → ISPF → SDSF → JCL | JES2 → DFSMS → USS/TCP-IP → SMP/E → WLM | Core Platform + Operations labs |
+| **Mainframe Developer** | JCL → COBOL | VSAM/Db2 → CICS → PL/I → HLASM | Application & Data labs |
+| **Workload Automation Engineer** | JCL/JES2 → RC/ABEND | Scheduling → Control-M concepts → REXX → workflows/APIs | Scheduler + Automation labs |
+| **Mainframe Security Engineer** | SAF/RACF fundamentals | JES/USS/Network → CICS/Db2 → certificates/AT-TLS → audit | Security Evidence labs |
+| **Production Support Engineer** | SDSF/SYSLOG | SMF/LOGREC → dumps/IPCS → RMF/WLM → recovery | Diagnostics + Recovery labs |
+| **z/OS System Programmer** | Core operations | IPL/PARMLIB → program management → HCD/IODF → SMP/E → Sysplex | Core Platform Engineering |
 
-> **Recommended foundation:** do not study these as isolated products. Learn how a job enters z/OS, which authority protects it, where its data lives, how it is observed, how it fails, and how it is recovered.
+> The paths converge. A production engineer must understand how **workload, authority, data, networking, observability and recovery** interact.
 
 ---
 
-## 🧭 The z/OS Engineering Campus
+## 🧩 Engineering Domains
+
+| Domain | Technical scope | Primary entry |
+|---|---|---|
+| **Core Platform Engineering** | Initialization, services, IPL/PARMLIB, system libraries, I/O | [Core Engineering](https://github.com/P-dot/zos-adcd-hercules-engineering-lab) |
+| **Operations & Workload** | TSO/ISPF, SDSF, JCL, JES2, scheduling, restart/rerun | [TSO/ISPF](https://github.com/P-dot/MVS_TSO_ISPF) · [JCL](https://github.com/P-dot/JCL_LABS) · [Scheduler](https://github.com/P-dot/zos-batch-scheduler) |
+| **Storage & Data** | DFSMS, SMS/ACS, DASD, VSAM, catalogs, Db2, recovery | [VSAM](https://github.com/P-dot/vsam01) · [Db2](https://github.com/P-dot/DB2-) |
+| **Application Engineering** | COBOL, PL/I, HLASM, CICS, Db2 integration | [COBOL](https://github.com/P-dot/COBOL) · [PL/I](https://github.com/P-dot/PL-I) · [HLASM](https://github.com/P-dot/z_Assembly) · [CICS](https://github.com/P-dot/CICS) |
+| **Security Engineering** | RACF/SAF, least privilege, trust boundaries, audit | [Security Evidence](https://github.com/P-dot/mainframe-racf-security-evidence) |
+| **Communications & USS** | TCP/IP, services, TN3270/FTP, OMVS, zFS, POSIX | [Communications](https://github.com/P-dot/zos-communications-server-network-lab) · [USS](https://github.com/P-dot/UNIX_System_Services-) |
+| **Automation & Modern Operations** | REXX, scheduler, shell, z/OSMF/workflows/APIs | [REXX](https://github.com/P-dot/Rexx) · [Scheduler](https://github.com/P-dot/zos-batch-scheduler) |
+| **Diagnostics & Performance** | SYSLOG, SMF, LOGREC, dumps/IPCS, RMF/WLM | [Diagnostics](https://github.com/P-dot/zos-problem-determination-diagnostics) |
+| **Integration Engineering** | Cross-repository production-like workflows | [Integration](https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab) |
+
+### Cross-cutting engineering planes
+
+**🛡 Security** — identity, authority, trust boundaries and audit.
+**📊 Observability** — SDSF, SYSLOG, SMF, LOGREC, Health Checker and RMF/WLM.
+**⚙ Automation** — JCL, REXX, scheduling, shell, workflows and APIs.
+
+---
+
+## 🗺️ Technical Architecture
+
+
 
 ```mermaid
 flowchart TB
@@ -103,7 +262,7 @@ flowchart TB
     click PROD "https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"
 ```
 
-### Three planes cross every subject
+### Three engineering planes cross every domain
 
 **Security** is not a final chapter: identities, authority, resources, trust boundaries and audit must be considered in every domain.
 **Observability** is not “the SMF repo”: SDSF, SYSLOG, SMF, LOGREC, Health Checker and RMF/WLM provide evidence about the system.
@@ -111,7 +270,7 @@ flowchart TB
 
 ---
 
-## 📚 Curriculum — from Operator to z/OS Engineer
+## 📚 Learning Paths — from Operator to z/OS Engineer
 
 ```mermaid
 flowchart LR
@@ -128,7 +287,7 @@ flowchart LR
     L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7 --> L8
 ```
 
-The curriculum is **spiral rather than strictly linear**. Security, diagnosis and automation begin early and become deeper as the underlying system knowledge grows.
+The learning model is **spiral rather than strictly linear**. Security, diagnosis and automation begin early and become deeper as the underlying system knowledge grows.
 
 ### Study order for this portfolio
 
@@ -142,9 +301,11 @@ The curriculum is **spiral rather than strictly linear**. Security, diagnosis an
 
 ---
 
-## 🧪 Laboratories — Learn by Evidence
+## 🧪 Labs & Evidence
 
-| Faculty | Laboratory | Engineering role |
+> **Evidence model:** `● VALIDATED` = demonstrated with published evidence · `◐ ACTIVE` = capability currently being expanded · `○ ROADMAP` = planned, not yet claimed as validated.
+
+| Engineering Domain | Laboratory | Engineering role |
 |---|---|---|
 | 🏛️ Core Platform | [zos-adcd-hercules-engineering-lab](https://github.com/P-dot/zos-adcd-hercules-engineering-lab) | z/OS core, system programming, architecture, operations and integration |
 | 🖥️ TSO / ISPF | [MVS_TSO_ISPF](https://github.com/P-dot/MVS_TSO_ISPF) | Interactive operating environment and operator workflow |
