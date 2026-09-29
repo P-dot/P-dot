@@ -37,108 +37,73 @@
 
 ## 🧭 Explore the Portfolio
 
+<div align="center">
+
 <table>
 <tr>
-<td width="25%" valign="top">
-
-### 🖥️ SYSTEMS
-
-TSO/E · ISPF · SDSF
-JCL · JES2 · DFSMS
-USS · TCP/IP · SMP/E
-WLM · XCF · Recovery
-
-[**Explore Systems →**](#-system-programmer-engineering-domains)
-
+<td width="50%" align="center">
+<a href="#-system-programmer-engineering-domains">
+<img src="assets/portal/systems-operations.png" width="100%" alt="Systems and Operations">
+</a><br>
+<a href="#-system-programmer-engineering-domains"><b>ENTER SYSTEMS & OPERATIONS →</b></a>
 </td>
-<td width="25%" valign="top">
-
-### 👨‍💻 DEVELOPMENT
-
-COBOL · PL/I · HLASM
-VSAM · Db2 · CICS
-JCL build flows
-Application integration
-
-[**Explore Development →**](#-labs--evidence)
-
-</td>
-<td width="25%" valign="top">
-
-### 🛡️ SECURITY
-
-RACF · SAF · USS
-JES · CICS · Db2
-Certificates · AT-TLS
-Audit · Trust boundaries
-
-[**Explore Security →**](#%EF%B8%8F-security-first-mainframe-engineering)
-
-</td>
-<td width="25%" valign="top">
-
-### ⚙️ AUTOMATION
-
-JCL · JES2 · Scheduling
-Control-M concepts
-REXX · z/OSMF
-Shell · APIs
-
-[**Explore Automation →**](#%EF%B8%8F-workload-automation-engineering)
-
+<td width="50%" align="center">
+<a href="#%EF%B8%8F-workload-automation-engineering">
+<img src="assets/portal/workload-automation.png" width="100%" alt="Workload Automation">
+</a><br>
+<a href="#%EF%B8%8F-workload-automation-engineering"><b>ENTER WORKLOAD AUTOMATION →</b></a>
 </td>
 </tr>
+
 <tr>
-<td width="25%" valign="top">
-
-### 🔬 DIAGNOSTICS
-
-SDSF · SYSLOG · SMF
-LOGREC · Dumps · IPCS
-RMF · WLM
-Incident & recovery
-
-[**Open Diagnostics →**](https://github.com/P-dot/zos-problem-determination-diagnostics)
-
+<td width="50%" align="center">
+<a href="#%EF%B8%8F-security-first-mainframe-engineering">
+<img src="assets/portal/security-compliance.png" width="100%" alt="Security and Compliance">
+</a><br>
+<a href="#%EF%B8%8F-security-first-mainframe-engineering"><b>ENTER SECURITY ENGINEERING →</b></a>
 </td>
-<td width="25%" valign="top">
-
-### 💾 DATA & STORAGE
-
-DFSMS · SMS/ACS
-DASD · VSAM · Db2
-Catalogs
-Backup & restore
-
-[**Explore Storage →**](https://github.com/P-dot/zos-adcd-hercules-engineering-lab)
-
+<td width="50%" align="center">
+<a href="https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab">
+<img src="assets/portal/application-development.png" width="100%" alt="Application Development">
+</a><br>
+<a href="https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"><b>ENTER APPLICATION DEVELOPMENT →</b></a>
 </td>
-<td width="25%" valign="top">
+</tr>
 
-### 🌐 NETWORK & USS
-
-TCP/IP · TN3270 · FTP
-Communications Server
-OMVS · zFS
-POSIX · shell
-
-[**Explore Network →**](https://github.com/P-dot/zos-communications-server-network-lab)
-
+<tr>
+<td width="50%" align="center">
+<a href="https://github.com/P-dot/zos-problem-determination-diagnostics">
+<img src="assets/portal/diagnostics-recovery.png" width="100%" alt="Diagnostics and Recovery">
+</a><br>
+<a href="https://github.com/P-dot/zos-problem-determination-diagnostics"><b>ENTER DIAGNOSTICS & RECOVERY →</b></a>
 </td>
-<td width="25%" valign="top">
+<td width="50%" align="center">
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab">
+<img src="assets/portal/data-storage.png" width="100%" alt="Data and Storage">
+</a><br>
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab"><b>ENTER DATA & STORAGE →</b></a>
+</td>
+</tr>
 
-### 🚀 INTEGRATION
-
-Workload + applications
-Security + data
-Observability + recovery
-Automation + evidence
-
-[**Production Tracks →**](#-production-tracks)
-
+<tr>
+<td width="50%" align="center">
+<a href="https://github.com/P-dot/zos-communications-server-network-lab">
+<img src="assets/portal/network-uss.png" width="100%" alt="Network and UNIX System Services">
+</a><br>
+<a href="https://github.com/P-dot/zos-communications-server-network-lab"><b>ENTER NETWORK & USS →</b></a>
+</td>
+<td width="50%" align="center">
+<a href="#-production-tracks">
+<img src="assets/portal/integration-system-programming.png" width="100%" alt="Integration and System Programming">
+</a><br>
+<a href="#-production-tracks"><b>ENTER INTEGRATION & SYSTEM PROGRAMMING →</b></a>
 </td>
 </tr>
 </table>
+
+</div>
+
+> **Portal model:** the visual layer is navigation; the repositories and published evidence remain the source of truth.
 
 ---
 
