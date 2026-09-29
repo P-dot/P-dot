@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="#-explore-the-portfolio">
-  <img src="assets/zos-mainframe-engineering-portal-v2.png" width="100%" alt="IBM z/OS Mainframe Engineering Portfolio — systems, operations, security, automation, development, storage, networking, diagnostics and integration">
+  <img src="assets/zos-mainframe-engineering-portal-final.png" width="100%" alt="IBM z/OS Mainframe Engineering Portfolio — systems, operations, security, automation, development, storage, networking, diagnostics and integration">
 </a>
 
 <br><br>
@@ -109,16 +109,46 @@
 
 ## 🛤️ Choose Your Path
 
-| Professional path | Foundation | Progression | Evidence destination |
-|---|---|---|---|
-| **z/OS Administrator** | TSO/E → ISPF → SDSF → JCL | JES2 → DFSMS → USS/TCP-IP → SMP/E → WLM | Core Platform + Operations labs |
-| **Mainframe Developer** | JCL → COBOL | VSAM/Db2 → CICS → PL/I → HLASM | Application & Data labs |
-| **Workload Automation Engineer** | JCL/JES2 → RC/ABEND | Scheduling → Control-M concepts → REXX → workflows/APIs | Scheduler + Automation labs |
-| **Mainframe Security Engineer** | SAF/RACF fundamentals | JES/USS/Network → CICS/Db2 → certificates/AT-TLS → audit | Security Evidence labs |
-| **Production Support Engineer** | SDSF/SYSLOG | SMF/LOGREC → dumps/IPCS → RMF/WLM → recovery | Diagnostics + Recovery labs |
-| **z/OS System Programmer** | Core operations | IPL/PARMLIB → program management → HCD/IODF → SMP/E → Sysplex | Core Platform Engineering |
+<div align="center">
+<table>
+<tr>
+<td width="33%" align="center">
+<a href="https://github.com/P-dot/MVS_TSO_ISPF"><img src="assets/roles/zos-administrator.png" width="100%" alt="z/OS Administrator"></a><br>
+<b>z/OS ADMINISTRATOR</b><br>
+TSO/E → ISPF → SDSF → JCL → JES2 → DFSMS → USS/TCP-IP
+</td>
+<td width="33%" align="center">
+<a href="https://github.com/P-dot/zos-batch-scheduler"><img src="assets/roles/workload-automation-engineer.png" width="100%" alt="Workload Automation Engineer"></a><br>
+<b>WORKLOAD AUTOMATION ENGINEER</b><br>
+JCL/JES2 → Scheduling → Control-M concepts → REXX → workflows/APIs
+</td>
+<td width="33%" align="center">
+<a href="https://github.com/P-dot/mainframe-racf-security-evidence"><img src="assets/roles/mainframe-security-engineer.png" width="100%" alt="Mainframe Security Engineer"></a><br>
+<b>MAINFRAME SECURITY ENGINEER</b><br>
+SAF/RACF → JES/USS/Network → CICS/Db2 → certificates/AT-TLS → audit
+</td>
+</tr>
+<tr>
+<td width="33%" align="center">
+<a href="https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"><img src="assets/roles/mainframe-developer.png" width="100%" alt="Mainframe Developer"></a><br>
+<b>MAINFRAME DEVELOPER</b><br>
+JCL → COBOL → VSAM/Db2 → CICS → PL/I → HLASM
+</td>
+<td width="33%" align="center">
+<a href="https://github.com/P-dot/zos-problem-determination-diagnostics"><img src="assets/roles/production-support-engineer.png" width="100%" alt="Production Support Engineer"></a><br>
+<b>PRODUCTION SUPPORT ENGINEER</b><br>
+SDSF/SYSLOG → SMF/LOGREC → dumps/IPCS → RMF/WLM → recovery
+</td>
+<td width="33%" align="center">
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab"><img src="assets/roles/zos-system-programmer.png" width="100%" alt="z/OS System Programmer"></a><br>
+<b>z/OS SYSTEM PROGRAMMER</b><br>
+IPL/PARMLIB → program management → HCD/IODF → SMP/E → Sysplex
+</td>
+</tr>
+</table>
+</div>
 
-> The paths converge. A production engineer must understand how **workload, authority, data, networking, observability and recovery** interact.
+> These paths converge in production-like engineering: workload, authority, data, networking, observability, recovery and automation are treated as one system.
 
 ---
 
