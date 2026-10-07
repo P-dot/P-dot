@@ -11,7 +11,7 @@
 
 <br><br>
 
-<a href="docs/ACADEMY.md"><b>START ACADEMY</b></a> ·
+<a href="docs/academy.html"><b>START ACADEMY</b></a> ·
 <a href="#explore"><b>EXPLORE</b></a> ·
 <a href="#paths"><b>CHOOSE YOUR PATH</b></a> ·
 <a href="#journey"><b>LEARNING JOURNEY</b></a> ·
@@ -34,7 +34,8 @@
 
 This portfolio is designed as a **connected learning system**, not a repository list. Follow the curriculum from operator fundamentals to system programming and production integration, with every capability backed by labs and evidence.
 
-**[ENTER THE z/OS ENGINEERING ACADEMY →](docs/ACADEMY.md)**
+**[ENTER THE z/OS ENGINEERING ACADEMY →](docs/academy.html)**  
+[Curriculum](docs/CURRICULUM.md) · [Course Catalog](docs/COURSES.md) · [Cross-Domain Relationships](docs/RELATIONSHIPS.md) · [Lab Standard](docs/LAB-STANDARD.md)
 
 The Academy also defines the common lesson format, evidence standard, prerequisites and cross-domain bridges used throughout the portfolio.
 
