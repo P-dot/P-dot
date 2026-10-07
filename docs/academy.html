@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="z/OS Engineering Academy: a connected, lab-driven path from mainframe fundamentals to production-like systems engineering.">
+  <title>z/OS Engineering Academy</title>
+  <link rel="stylesheet" href="assets/css/portal.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>z/OS Engineering Academy</span></a>
+  <nav><a href="index.html">Portfolio</a><a href="#start">Start</a><a href="#schools">Schools</a><a href="#bridges">Bridges</a><a href="#method">Method</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">LEARN z/OS BY BUILDING AND EXPLAINING IT</p>
+    <h1>z/OS Engineering<br><span>Academy</span></h1>
+    <p class="lead">Concept → Lab → Evidence → Explanation → Troubleshooting → Integration</p>
+    <p class="hero-copy">A connected curriculum built from hands-on z/OS labs. Learn each subsystem, then learn the boundaries where subsystems meet.</p>
+    <div class="actions"><a class="btn primary" href="#start">Start learning</a><a class="btn" href="https://github.com/P-dot/P-dot/blob/main/docs/CURRICULUM.md">Full curriculum ↗</a></div>
+    <div class="status"><span>Evidence-driven</span><span>Cross-domain</span><span>Beginner → Advanced</span><span>Production-minded</span></div>
+  </div>
+</section>
+
+<section id="start" class="section">
+  <div class="section-head"><span>01</span><div><p>START HERE</p><h2>Your first z/OS learning chain</h2></div></div>
+  <p class="method">TSO/E & ISPF → DATA SETS → JCL → JES2 → SDSF → REXX / USS / SCHEDULING</p>
+  <div class="grid paths">
+    <a class="path" href="https://github.com/P-dot/MVS_TSO_ISPF"><strong>1 · Operate z/OS</strong><small>TSO/E · ISPF · data sets · editing · submission</small></a>
+    <a class="path" href="https://github.com/P-dot/JCL_LABS"><strong>2 · Run batch work</strong><small>JOB · EXEC · DD · procedures · JES2 · spool · RC</small></a>
+    <a class="path" href="https://github.com/P-dot/Rexx"><strong>3 · Automate</strong><small>REXX · repeatable workflows · operational tooling</small></a>
+    <a class="path" href="https://github.com/P-dot/UNIX_System_Services-"><strong>4 · Enter USS</strong><small>shell · zFS · processes · POSIX on z/OS</small></a>
+  </div>
+</section>
+
+<section id="schools" class="section alt">
+  <div class="section-head"><span>02</span><div><p>ACADEMY SCHOOLS</p><h2>Choose a subsystem, then follow its connections</h2></div></div>
+  <div class="grid domains">
+    <a class="card blue" href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab"><h3>Systems</h3><p>IPL · PARMLIB · JES2 · WLM · SMP/E · platform control</p><b>ENTER →</b></a>
+    <a class="card green" href="https://github.com/P-dot/JCL_LABS"><h3>Batch</h3><p>JCL · JES2 · utilities · data lifecycle · spool</p><b>ENTER →</b></a>
+    <a class="card cyan" href="https://github.com/P-dot/vsam01"><h3>Storage</h3><p>DFSMS · catalogs · VSAM · LDS · data structures</p><b>ENTER →</b></a>
+    <a class="card purple" href="https://github.com/P-dot/DB2-"><h3>Data</h3><p>Db2 · SQL · page sets · application data</p><b>ENTER →</b></a>
+    <a class="card purple" href="https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"><h3>Applications</h3><p>COBOL · PL/I · CICS · Db2 · VSAM integration</p><b>ENTER →</b></a>
+    <a class="card red" href="https://github.com/P-dot/mainframe-racf-security-evidence"><h3>Security</h3><p>SAF · RACF · identity · authorization · certificates</p><b>ENTER →</b></a>
+    <a class="card red" href="https://github.com/P-dot/zos-communications-server-network-lab"><h3>Networking</h3><p>TCP/IP · services · policy · AT-TLS</p><b>ENTER →</b></a>
+    <a class="card amber" href="https://github.com/P-dot/zos-problem-determination-diagnostics"><h3>Diagnostics</h3><p>messages · SYSLOG · evidence · diagnosis · recovery</p><b>ENTER →</b></a>
+  </div>
+</section>
+
+<section id="bridges" class="section">
+  <div class="section-head"><span>03</span><div><p>CROSS-DOMAIN BRIDGES</p><h2>Where z/OS becomes a system</h2></div></div>
+  <div class="track-grid">
+    <article><h3>Network → Security</h3><p>TCP/IP → SAF/SERVAUTH → RACF → certificates → Policy Agent / AT-TLS → diagnostics</p></article>
+    <article><h3>Storage → Data</h3><p>DFSMS → VSAM → Db2 page sets → application access → recovery</p></article>
+    <article><h3>VSAM → USS</h3><p>VSAM LDS → zFS aggregate → USS filesystem → process → TCP/IP service</p></article>
+    <article><h3>Batch → Production</h3><p>scheduler → JCL → JES2 → application → data → RC/ABEND → restart</p></article>
+    <article><h3>CICS → Application</h3><p>transaction → COBOL/PL-I → Db2/VSAM → RACF → logs/recovery</p></article>
+    <article><h3>Everything → Diagnostics</h3><p>state → message → evidence → hypothesis → correction → validation</p></article>
+  </div>
+</section>
+
+<section id="method" class="section alt">
+  <div class="section-head"><span>04</span><div><p>HOW LESSONS WORK</p><h2>Evidence is explained, not displayed</h2></div></div>
+  <p class="method">WHY → PREREQUISITES → THEORY → EXPERIMENT → PROCEDURE → EVIDENCE → INTERNAL FLOW → VALIDATION → TROUBLESHOOTING → NEXT LAB</p>
+  <div class="grid control">
+    <a href="https://github.com/P-dot/P-dot/blob/main/docs/LAB-STANDARD.md"><b>Lab Standard</b><span>The publication contract for Academy lessons</span></a>
+    <a href="https://github.com/P-dot/P-dot/blob/main/docs/COURSES.md"><b>Course Catalog</b><span>Every school and its learning outcome</span></a>
+    <a href="https://github.com/P-dot/P-dot/blob/main/docs/CURRICULUM.md"><b>Curriculum Graph</b><span>Prerequisites and learning routes</span></a>
+    <a href="https://github.com/P-dot/P-dot/blob/main/docs/RELATIONSHIPS.md"><b>Relationship Matrix</b><span>Why subsystems and repositories connect</span></a>
+  </div>
+</section>
+</main>
+<footer>
+  <b>z/OS Engineering Academy</b>
+  <p>Learn the subsystem. Prove it in a lab. Explain the evidence. Connect it to the system.</p>
+  <small>Independent hands-on engineering project. Not affiliated with or endorsed by IBM.</small>
+</footer>
+<script src="assets/js/portal.js"></script>
+</body>
+</html>
