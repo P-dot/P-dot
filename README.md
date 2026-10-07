@@ -30,6 +30,31 @@
 
 ---
 
+## Engineering Milestones
+
+<div align="center">
+
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab"><img src="https://img.shields.io/badge/CORE_z%2FOS-SYSTEMS_ENGINEERING-0f62fe?style=for-the-badge"></a>
+<a href="https://github.com/P-dot/JCL_LABS"><img src="https://img.shields.io/badge/JCL_%26_JES2-BATCH_ENGINEERING-198038?style=for-the-badge"></a>
+<a href="https://github.com/P-dot/mainframe-racf-security-evidence"><img src="https://img.shields.io/badge/RACF_%26_SAF-SECURITY_ENGINEERING-da1e28?style=for-the-badge"></a>
+<a href="https://github.com/P-dot/zos-communications-server-network-lab"><img src="https://img.shields.io/badge/COMM_SERVER-NETWORK_ENGINEERING-0072c3?style=for-the-badge"></a>
+
+<a href="https://github.com/P-dot/vsam01"><img src="https://img.shields.io/badge/DFSMS_%26_VSAM-STORAGE_ENGINEERING-6929c4?style=for-the-badge"></a>
+<a href="https://github.com/P-dot/mainframe-cobol-db2-cics-devops-lab"><img src="https://img.shields.io/badge/COBOL_%C2%B7_DB2_%C2%B7_CICS-APPLICATION_INTEGRATION-8a3ffc?style=for-the-badge"></a>
+<a href="https://github.com/P-dot/zos-problem-determination-diagnostics"><img src="https://img.shields.io/badge/SYSLOG_%C2%B7_SMF_%C2%B7_LOGREC-DIAGNOSTICS-f1c21b?style=for-the-badge"></a>
+<a href="https://github.com/P-dot/zos-batch-scheduler"><img src="https://img.shields.io/badge/REXX_%C2%B7_SCHEDULING-AUTOMATION-009d9a?style=for-the-badge"></a>
+
+<a href="https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/labs/40-zowe-ftp-modern-workstation-integration"><img src="https://img.shields.io/badge/ZOWE_%E2%86%92_JES2-MODERN_INTEGRATION-ff832b?style=for-the-badge"></a>
+<a href="docs/academy.html"><img src="https://img.shields.io/badge/z%2FOS_ENGINEERING_ACADEMY-LEARN_BY_LABS-161616?style=for-the-badge"></a>
+
+<br><br>
+
+<sub><b>Evidence-backed milestones.</b> Every badge opens the repository or lab that demonstrates the capability.</sub>
+
+</div>
+
+---
+
 ## Start here — z/OS Engineering Academy
 
 This portfolio is designed as a **connected learning system**, not a repository list. Follow the curriculum from operator fundamentals to system programming and production integration, with every capability backed by labs and evidence.
