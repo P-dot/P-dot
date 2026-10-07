@@ -2,7 +2,7 @@
 
 > A hands-on, evidence-driven learning system built around a real z/OS laboratory. The Academy is organized by capabilities and dependency chains, not by isolated repositories.
 
-[← Academy Portal](../README.md) · [Curriculum Graph](CURRICULUM.md) · [Lab Standard](LAB-STANDARD.md) · [Core Platform](https://github.com/P-dot/zos-adcd-hercules-engineering-lab) · [Architecture V2](https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/architecture/v2)
+[← Academy Portal](../README.md) · [Courses](COURSES.md) · [Curriculum Graph](CURRICULUM.md) · [Relationships](RELATIONSHIPS.md) · [Lab Standard](LAB-STANDARD.md) · [Core Platform](https://github.com/P-dot/zos-adcd-hercules-engineering-lab) · [Architecture V2](https://github.com/P-dot/zos-adcd-hercules-engineering-lab/tree/main/docs/architecture/v2)
 
 ## How to learn here
 
