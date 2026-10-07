@@ -11,6 +11,7 @@
 
 <br><br>
 
+<a href="docs/ACADEMY.md"><b>START ACADEMY</b></a> ·
 <a href="#explore"><b>EXPLORE</b></a> ·
 <a href="#paths"><b>CHOOSE YOUR PATH</b></a> ·
 <a href="#journey"><b>LEARNING JOURNEY</b></a> ·
@@ -26,6 +27,16 @@
 <a href="https://github.com/P-dot/zos-batch-scheduler"><img src="https://img.shields.io/badge/WORKLOAD_AUTOMATION-CONTROL--M_%C2%B7_REXX_%C2%B7_APIs-8a3ffc?style=for-the-badge"></a>
 
 </div>
+
+---
+
+## Start here — z/OS Engineering Academy
+
+This portfolio is designed as a **connected learning system**, not a repository list. Follow the curriculum from operator fundamentals to system programming and production integration, with every capability backed by labs and evidence.
+
+**[ENTER THE z/OS ENGINEERING ACADEMY →](docs/ACADEMY.md)**
+
+The Academy also defines the common lesson format, evidence standard, prerequisites and cross-domain bridges used throughout the portfolio.
 
 ---
 
